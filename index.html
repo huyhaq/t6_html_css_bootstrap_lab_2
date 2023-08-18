@@ -17,168 +17,164 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
     <link rel="stylesheet" href="css/style.css" type="text/css">
 <body>
-
-<div class="offcanvas-menu-overlay"></div>
-<div class="offcanvas-menu-wrapper">
-    <div class="offcanvas__option">
-        <div class="offcanvas__links">
-            <a href="#">Sign in</a>
-            <a href="#">FAQs</a>
-        </div>
-        <div class="offcanvas__top__hover">
-            <span>Usd <i class="arrow_carrot-down"></i></span>
-            <ul>
-                <li>USD</li>
-                <li>EUR</li>
-                <li>USD</li>
-            </ul>
-        </div>
-    </div>
-    <div class="offcanvas__nav__option">
-        <a href="#" class="search-switch"><img src="img/icon/search.png" alt></a>
-        <a href="#"><img src="img/icon/heart.png" alt></a>
-        <a href="#"><img src="img/icon/cart.png" alt> <span>0</span></a>
-        <div class="price">$0.00</div>
-    </div>
-    <div id="mobile-menu-wrap"></div>
-    <div class="offcanvas__text">
-        <p>Free shipping, 30-day return or refund guarantee.</p>
-    </div>
-</div>
-
-
 <header class="header">
-    <div class="header__top">
+    <div class="header__top bg-dark py-2">
+
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-7">
+            <div class="row ">
+                <div class="col-6">
                     <div class="header__top__left">
-                        <p>Free shipping, 30-day return or refund guarantee.</p>
+                        <p class="text-white">Free shipping, 30-day return or refund guarantee.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-5">
-                    <div class="header__top__right">
-                        <div class="header__top__links">
-                            <a href="#">Sign in</a>
-                            <a href="#">FAQs</a>
+                <div class="col-6">
+                    <div class="header__top__right d-flex justify-content-end">
+                        <div class="header__top__links me-3">
+                            <a href="#" class="text-white me-3">Sign in</a>
+                            <a href="#" class="text-white">FAQs</a>
                         </div>
-                        <div class="header__top__hover">
-                            <span>Usd <i class="arrow_carrot-down"></i></span>
-                            <ul>
-                                <li>USD</li>
-                                <li>EUR</li>
-                                <li>USD</li>
-                            </ul>
-                        </div>
+                        <li class="nav-item dropdown drop-money ">
+                          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Usd
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">EUR</a></li>
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                          </ul>
+                        </li>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    
+
     <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-3">
-                <div class="header__logo">
-                    <a href="./index.html"><img src="img/logo.png" alt></a>
-                </div>
+      <nav class="navbar bg-white navbar-expand-md" aria-label="Light offcanvas navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="img/logo.png" alt></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight" aria-controls="offcanvasNavbarLight">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLight" aria-labelledby="offcanvasNavbarLightLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel"><img src="img/logo.png" alt></h5>
+              <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="col-lg-6 col-md-6">
-                <nav class="header__menu mobile-menu">
-                    <ul>
-                        <li class="active"><a href="./index.html">Home</a></li>
-                        <li><a href="./shop.html">Shop</a></li>
-                        <li><a href="#">Pages</a>
-                            <ul class="dropdown">
-                                <li><a href="./about.html">About Us</a></li>
-                                <li><a href="./shop-details.html">Shop Details</a></li>
-                                <li><a href="./shopping-cart.html">Shopping Cart</a></li>
-                                <li><a href="./checkout.html">Check Out</a></li>
-                                <li><a href="./blog-details.html">Blog Details</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="./contact.html">Contacts</a></li>
-                    </ul>
-                </nav>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                    <li><a class="dropdown-item" href="#">Shop Details</a></li>
+                  
+                    <li><a class="dropdown-item" href="#">Shopping Cart</a></li>
+                    <li><a class="dropdown-item" href="#">Check Out</a></li>
+                    <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacts</a>
+                </li>
+              </ul>
+              <div class="header__nav__option d-flex">
+                <a href="#" class="search-switch p-2"><img src="img/icon/search.png" alt></a>
+                <a href="#" class="p-2"><img src="img/icon/heart.png" alt></a>
+                <a href="#" class="p-2"><img src="img/icon/cart.png" alt> </a>
+                <div class="price p-2">$0.00</div>
             </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="header__nav__option">
-                    <a href="#" class="search-switch"><img src="img/icon/search.png" alt></a>
-                    <a href="#"><img src="img/icon/heart.png" alt></a>
-                    <a href="#"><img src="img/icon/cart.png" alt> <span>0</span></a>
-                    <div class="price">$0.00</div>
-                </div>
             </div>
+          </div>
         </div>
-        <div class="canvas__open"><i class="fa fa-bars"></i></div>
+      </nav>
     </div>
 </header>
 
 
 <section class="hero">
-    <div class="hero__slider owl-carousel">
-        <div class="hero__items set-bg" data-setbg="img/hero/hero-1.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-5 col-lg-7 col-md-8">
-                        <div class="hero__text">
-                            <h6>Summer Collection</h6>
-                            <h2>Fall - Winter Collections 2030</h2>
-                            <p>A specialist label creating luxury essentials. Ethically crafted with an unwavering
-                                commitment to exceptional quality.</p>
-                            <a href="#" class="primary-btn">Shop now <span class="arrow_right"></span></a>
-                            <div class="hero__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="banner-slide-item">
+            <div class="banner-slide-img">
+              <img src="img/hero/hero-1.jpg" alt="">
+            </div>
+            <div class="banner-slide-content">
+              <h6 class="text-danger text-uppercase">Summer Collection</h6>
+              <h2 class="d-flex flex-column">Fall - Winter
+                <span>Collections 2030</span>
+              </h2>
+              <p>A specialist label creating luxury essentials. Ethically crafted with an unwavering
+                  commitment to exceptional quality.</p>
+              <div>
+                <a href="#" class="btn btn-dark ">Shop now <span class="arrow_right"></span></a>
+              </div>
+              <div class="hero__social">
+                  <a href="#"><i class="fa-brands fa-facebook text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter text-warning"></i></a>
+                  <a href="#"><i class="fa-brands fa-pinterest text-info"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram text-dark"></i></a>
+                  <i class="fa-brands fa-instagram"></i>
                 </div>
             </div>
         </div>
-        <div class="hero__items set-bg" data-setbg="img/hero/hero-2.jpg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-5 col-lg-7 col-md-8">
-                        <div class="hero__text">
-                            <h6>Summer Collection</h6>
-                            <h2>Fall - Winter Collections 2030</h2>
-                            <p>A specialist label creating luxury essentials. Ethically crafted with an unwavering
-                                commitment to exceptional quality.</p>
-                            <a href="#" class="primary-btn">Shop now <span class="arrow_right"></span></a>
-                            <div class="hero__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
+
     </div>
+    
+  
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
 </section>
 
 
 <section class="banner spad">
     <div class="container">
         <div class="row">
-            <div class="col-lg-7 offset-lg-4">
-                <div class="banner__item">
-                    <div class="banner__item__pic">
-                        <img src="img/banner/banner-1.jpg" alt>
-                    </div>
-                    <div class="banner__item__text">
-                        <h2>Clothing Collections 2030</h2>
-                        <a href="#">Shop now</a>
-                    </div>
-                </div>
-            </div>
+          <div class="row justify-content-end p-3">
+            <div class="col-12 col-sm-7">
+              <div class="banner__item">
+                  <div class="banner__item__pic">
+                      <img src="img/banner/banner-1.jpg" alt>
+                  </div>
+                  <div class="banner__item__text">
+                      <h2>Clothing 
+                        <p class="text-nowrap">Collections 2030</p>
+                      </h2>
+                      <a href="#">Shop now</a>
+                  </div>
+              </div>
+          </div>
+          </div>
+            
             <div class="col-lg-5">
                 <div class="banner__item banner__item--middle">
                     <div class="banner__item__pic">
@@ -204,7 +200,25 @@
         </div>
     </div>
 </section>
+<ul class="nav nav-pills mb-3 d-flex justify-content-center mt-4" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Best Sellers</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">New Arrivals</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+  </li>
 
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+    Best Sellers value
+  </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">New Arrivals value</div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+</div>
 
 <section class="product spad">
     <div class="container">

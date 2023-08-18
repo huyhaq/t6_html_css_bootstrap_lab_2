@@ -1,0 +1,62 @@
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.drop-money:hover > .dropdown-menu{
+	display: block;
+}
+.banner-slide-item{
+	position: relative;
+}
+.banner-slide-img img{
+	max-width: 100%;
+}
+.banner-slide-content{
+	position: absolute;
+	width: 70%;
+	height: 100%;
+	left: 15%;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.banner__item{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+}
+.banner__item__text{
+	position: relative;
+	right:-50px;
+
+}
+.banner__item__pic {
+	display: flex;
+}
+.banner__item__pic img {
+	width: 100%;
+	min-width: 300px;
+	
+}
+.banner__item__text a{
+	transition: all 1s ease;
+	position: relative;
+}
+.banner__item__text a::after{
+	transition: all 1s ease;
+	content: "";
+	width: 100%;
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	background-color: black;
+	height: 2px;
+}
+.banner__item:hover .banner__item__text a::after{
+	background-color: blue;
+	width: 50%;
+}
